@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+    <!-- Title of the page -->
+    <title>Eatery</title>
+
+    <!-- Links to favicon, style sheets, bootstrap and google fonts api -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- End of links to favicon, style sheets, bootstrap and google fonts api -->
+
+</head>
+<body>
+
+    <!-- Header of the page -->
+    <header>
+        <!-- Navbar -->
+        <div class="navbar navbar-inverse">
+            <!-- Container for the header -->
+            <div class="container">
+
+                <!-- Navbar header collapsable -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-cutlery"></span>Eatery</a>
+                </div>
+                <!-- End of navbar header collapsable -->
+
+                <!-- Links part header -->
+                <div class="navbar-collapse collapse" style="height: 1px;">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                    </ul>
+                </div>
+                <!-- End of links part header -->
+
+            </div>
+            <!-- End of container for the header -->
+        </div>
+        <!-- End of navbar -->
+    </header>
+    <!-- End of header of the page -->
+
+    <!-- Section of the page -->
+    <section>
+        <!-- Container for the section -->
+        <div class="container" id="home">
+
+            <!-- Tabs for the page -->
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#tab-guest" data-toggle="tab">Guest</a></li>
+                <li><a href="#tab-owner" data-toggle="tab">Owner</a></li>
+            </ul>
+            <!-- End of tabs for the page -->
+
+            <!-- Body inside section -->
+            <div id="content" class="tab-content">
+
+                <!-- Guests tab -->
+                <div class="tab-pane active" id="tab-guest">
+                    <!-- Heading for the guests tab -->
+                    <h6>Make a Reservation</h6>
+                    <!-- Guests reservation form -->
+                    <form role="form">
+                        <!-- Date and Time fields, collapsible -->
+                        <div class="row">
+                            <!-- Date field -->
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reserveDate">Date</label>
+                                    <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
+                                </div>
+                            </div>
+                            <!-- End of date field -->
+                            <!-- Time field -->
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reserveTime">Time</label>
+                                    <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
+                                </div>
+                            </div>
+                            <!-- End of time field -->
+                        </div>
+                        <!-- End of date and Time fields, collapsible -->
+                        <!-- Name field -->
+                        <div class="form-group">
+                            <label for="reserveName">Name</label>
+                            <input type="text" class="form-control" id="reserveName" placeholder="Enter Your Name">
+                        </div>
+                        <!-- End of name field -->
+                        <!-- Phone number field -->
+                        <div class="form-group">
+                            <label for="reservePhone">Phone</label>
+                            <input type="tel" class="form-control" id="reservePhone" placeholder="Enter Your Phone">
+                        </div>
+                        <!-- End of phone number field -->
+                        <!-- Email field -->
+                        <div class="form-group">
+                            <label for="reserveEmail">Email</label>
+                            <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
+                        </div>
+                        <!-- End of email field -->
+                        <!-- Party size and Special needs fields, collapsible -->
+                        <div class="row">
+                            <!-- Party size field -->
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="reserveSize">Party Size</label>
+                                    <input type="number" class="form-control" id="reserveSize" placeholder="# Guests">
+                                </div>
+                            </div>
+                            <!-- Party size field -->
+                            <!-- Special needs field -->
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label for="reserveSpecial">Special Need</label>
+                                    <input type="email" class="form-control" id="reserveSpecial" placeholder="e.g. Birthday, Anniversary etc.">
+                                </div>
+                            </div>
+                            <!-- End of party size field -->
+                        </div>
+                        <!-- End of party size and Special needs fields, collapsible -->
+                        <!-- Book reservation button and edit reservation link -->
+                        <div class="text-center">
+                            <button type="submit" class="btn large-btn btn-primary">Reserve</button>
+                            <button type="button" class="btn btn-link">Change Existing Reservation?</button>
+                        </div>
+                        <!-- End of book reservation button and edit reservation link -->
+                    </form>
+                    <!-- End of guests reservation form -->
+                </div>
+                <!-- End of guests tab -->
+
+                <!-- Owners tab -->
+                <div class="tab-pane" id="tab-owner">
+                    <!-- Heading for the owners tab -->
+                    <h6>Login</h6>
+                    <!-- Owners login form -->
+                    <form role="form">
+                        <!-- Email field -->
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+                        </div>
+                        <!-- End of email field -->
+                        <!-- Password field -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <!-- End of password field -->
+                        <!-- Submit button and forgot password link -->
+                        <div class="text-center">
+                            <button type="submit" class="btn large-btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-link">Forgot Password?</button>
+                        </div>
+                        <!-- End of submit button and forgot password link -->
+                    </form>
+                    <!-- End of owners login form -->
+                </div>
+                <!-- End of owners tab -->
+
+            </div>
+            <!-- End of body inside section -->
+
+        </div>
+        <!-- End of container for the section -->
+    </section>
+    <!-- End of section of the page -->
+
+    <!-- Footer of the page -->
+    <footer>
+        <!-- Footer section of the page NO FOOTER -->
+    </footer>
+    <!-- End of footer of the page -->
+
+    <!-- JavaScripts libraries-->
+    <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+    <!-- End of javaScripts libraries-->
+
+</body>
+</html>

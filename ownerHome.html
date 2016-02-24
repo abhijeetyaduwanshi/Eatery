@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+	<!-- Title of the page -->
+	<title>Eatery</title>
+
+	<!-- Links to favicon, style sheets, bootstrap and google fonts api -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!-- End of links to favicon, style sheets, bootstrap and google fonts api -->
+
+</head>
+<body>
+
+	<!-- Header of the page -->
+	<header>
+		<!-- Navbar -->
+		<div class="navbar navbar-inverse">
+			<!-- Container for the header -->
+			<div class="container">
+
+				<!-- Navbar header collapsable -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-cutlery"></span>Eatery</a>
+				</div>
+				<!-- End of navbar header collapsable -->
+
+				<!-- Links part header -->
+				<div class="navbar-collapse collapse" style="height: 1px;">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link1</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+				<!-- End of links part header -->
+
+			</div>
+			<!-- End of container for the header -->
+		</div>
+		<!-- End of navbar -->
+	</header>
+	<!-- End of header of the page -->
+
+	<!-- Section of the page -->
+	<section>
+		<!-- Container for the section -->
+		<div class="container" id="ownerHome">
+
+			<!-- Tabs for the page -->
+			<ul class="nav nav-tabs nav-justified">
+				<!-- Reservation tab -->
+				<li class="active">
+					<a href="#tab-reservation" data-toggle="tab">
+						<span class="glyphicon glyphicon-calendar"></span>
+						<span class="tab-text">Reservations</span>
+					</a>
+				</li>
+				<!-- End of reservation tab -->
+				<!-- Seatings Tab -->
+				<li>
+					<a href="#tab-seating" data-toggle="tab">
+						<span class="glyphicon glyphicon-th"></span>
+						<span class="tab-text">Seating</span>
+					</a>
+				</li>
+				<!-- End of seatings Tab -->
+				<!-- Profile tab -->
+				<li>
+					<a href="#tab-owner" data-toggle="tab">
+						<span class="glyphicon glyphicon-list"></span>
+						<span class="tab-text">Profile</span>
+					</a>
+				</li>
+				<!-- End of profile tab -->
+				<!-- App settings tab -->
+				<li>
+					<a href="#tab-owner" data-toggle="tab">
+						<span class="glyphicon glyphicon-cog"></span>
+						<span class="tab-text">App Settings</span>
+					</a>
+				</li>
+				<!-- End of app settings tab -->
+				<!-- Contacts tab -->
+				<li>
+					<a href="#tab-owner" data-toggle="tab">
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="tab-text">Contacts</span>
+					</a>
+				</li>
+				<!-- End of contacts tab -->
+			</ul>
+			<!-- End of tabs for the page -->
+
+			<!-- Body inside section -->
+			<div id="content" class="tab-content">
+
+				<!-- Reservation tab -->
+				<div class="tab-pane active" id="tab-reservation">
+					<!-- Heading for the reservation tab -->
+					<h6>Reservation List</h6>
+					<!-- Reservation search -->
+					<div class="input-group">
+						<!-- Reservation search field -->
+						<input type="text" class="form-control" placeholder="Search Reservation" id="inputSearch">
+						<!-- Reservation search button -->
+						<div class="input-group-btn">
+							<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+						</div>
+						<!-- End of reservation search button -->
+					</div>
+					<!-- End of reservation search -->
+					<!-- Reservstion pages -->
+					<ul class="pagination pull-right">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+					<!-- End of reservstion pages -->
+					<!-- Reservation details -->
+					<table class="table table-condensed table-striped">
+						<thead>
+							<tr>
+								<th>CNF#</th>
+								<th>Name</th>
+								<th>Date</th>
+								<th>#</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>DA83CD</td>
+								<td>Abhijeet Yaduwanshi</td>
+								<td>02/15/2016 1:30PM</td>
+								<td>4</td>
+								<td>
+									<button class="btn btn-primary" title="Open Details">
+										<span class="glyphicon glyphicon-share"></span>
+										<span class="btn-text">Details</span>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- End of reservation details -->
+				</div>
+				<!-- End of reservation tab -->
+
+				<!-- Seatings Tab -->
+				<div class="tab-pane" id="tab-seating">
+					<!-- Heading for the seatings tab -->
+					<h6>Seating Area</h6>
+					<!-- Container for the seatings tab -->
+					<div class="container">
+						<!-- Setting width spaces for seatings details -->
+						<div class="col-sm-12 col-sm-6">
+							<!-- Seatings details -->
+							<table class="table table-condensed table-striped">
+								<thead>
+									<tr>
+										<th>Table#</th>
+										<th>Size</th>
+										<th>Status</th>
+										<th>Since</th>
+										<th>CNF#</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>4</td>
+										<td>Occupied</td>
+										<td>1:30PM</td>
+										<td>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>4</td>
+										<td>Available</td>
+										<td>-</td>
+										<td>
+											<span class="btn-filler"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>4</td>
+										<td>Occupied</td>
+										<td>1:30PM</td>
+										<td>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>4</td>
+										<td>Occupied</td>
+										<td>1:30PM</td>
+										<td>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>4</td>
+										<td>Available</td>
+										<td>-</td>
+										<td>
+											<span class="btn-filler"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>4</td>
+										<td>Occupied</td>
+										<td>1:30PM</td>
+										<td>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>4</td>
+										<td>Available</td>
+										<td>-</td>
+										<td>
+											<span class="btn-filler"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>4</td>
+										<td>Available</td>
+										<td>-</td>
+										<td>
+											<span class="btn-filler"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- End of seatings details -->
+						</div>
+						<!-- End of setting width spaces for seatings details -->
+						<!-- Tables arrangement and figures -->
+						<div class="col-sm-6">
+							<!-- Container for tables arrangement and figures -->
+							<div class="container">
+								<!-- Table no 1 -->
+								<div class="col-md-4">
+									<div class="seats img-responsive img-rounded">
+										<p>Table # 1</p>
+										<p>Occupied</p>
+										<p>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</p>
+									</div>
+								</div>
+								<!-- End of table no 1 -->
+								<!-- Table no 2 -->
+								<div class="col-md-4">
+									<div class="seats img-responsive img-circle">
+										<p>Table # 2</p>
+										<p>Occupied</p>
+										<p>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</p>
+									</div>
+								</div>
+								<!-- End of table no 2 -->
+								<!-- Table no 3 -->
+								<div class="col-md-4">
+									<div class="seats img-responsive img-rounded">
+										<p>Table # 3</p>
+										<p>Occupied</p>
+										<p>
+											<button type="button" class="btn btn-link">DA83CD</button>
+										</p>
+									</div>
+								</div>
+								<!-- End of table no 1 -->
+							</div>
+							<!-- End of container for tables arrangement and figures -->
+						</div>
+						<!-- End of tables arrangement and figures -->
+					</div>
+					<!-- End of container for the seatings tab -->
+				</div>
+				<!-- End of seatings Tab -->
+
+				<!-- Profile tab -->
+				<div class="tab-pane" id="tab-owner">
+					<!-- Heading for the profile tab -->
+					<h6>Login</h6>
+					<!-- Owner login form -->
+					<form role="form">
+						<!-- Email field -->
+						<div class="form-group">
+							<label for="email">Email address</label>
+							<input type="email" class="form-control" id="email" placeholder="example@domain.com">
+						</div>
+						<!-- End of email field -->
+						<!-- Password field -->
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" placeholder="Password">
+						</div>
+						<!-- End of password field -->
+						<!-- Submit button and forgot password link -->
+						<div class="text-center">
+							<button type="submit" class="btn large-btn btn-primary">Submit</button>
+							<button type="button" class="btn btn-link">Forgot Password?</button>
+						</div>
+						<!-- End of submit button and forgot password link -->
+					</form>
+					<!-- End of owner login form -->
+				</div>
+				<!-- End of profile tab -->
+
+				<!-- Similarly there can be App settings and contacts tabs -->
+
+			</div>
+			<!-- End of body inside section -->
+
+		</div>
+		<!-- End of container for the section -->
+	</section>
+	<!-- End of section of the page -->
+
+	<!-- Footer of the page -->
+	<footer>
+		<!-- Footer section of the page NO FOOTER -->
+	</footer>
+	<!-- End of footer of the page -->
+
+	<!-- JavaScripts libraries-->
+	<script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+	<!-- End of javaScripts libraries-->
+
+</body>
+</html>
